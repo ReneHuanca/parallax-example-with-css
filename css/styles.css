@@ -1,0 +1,52 @@
+*{
+    padding: 0;margin: 0;
+}
+
+.content{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    perspective: 100px;
+    perspective-origin: center;
+}
+.parallax {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+img{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+}
+
+.parallax:nth-child(1) img{
+    transform: translateZ(-200px) scale(3) ;
+} 
+.parallax:nth-child(2) img{
+    transform: translateZ(-100px) scale(2);
+} 
+.parallax:nth-child(3) img{
+    transform:translateY(0%);
+    object-position: bottom;;
+}
+.cover{
+    width: 100%;
+    position: absolute;
+    top: 100vh;
+    background: black;
+    color:white;
+}
+
+/* contain */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
